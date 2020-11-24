@@ -1,0 +1,35 @@
+.navbar-container{
+    width: 80vw;
+    margin: auto;
+
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 0px 10px;
+        text-transform: uppercase;
+        li{
+            padding: 0px 15px;
+            font-size: 14px;
+            font-weight: 500;
+            a{
+                text-decoration: none;
+                color: #000000;
+                
+                &:hover{
+                    color:#2879ef;
+                    transition: 0.5s ease;
+                }
+            }
+
+           
+            .current{
+                color: #2879ef;
+            }
+            
+            
+        }
+    }
+
+}

@@ -1,0 +1,110 @@
+
+@mixin button_style {
+    background-color: #2879fe;
+    padding:  15px;
+    color: lightcyan;
+    text-align: center;
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 0.3;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    border-radius:5px;
+
+
+    &:hover{
+        background-color: rgb(34, 103,216)    
+    }
+}
+
+.product-section-container{
+    width:100%;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(6,16.66%);
+    margin: 10px 0px;
+ 
+    .product-items-container{
+        margin: 5px;
+    
+
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .product-details{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            line-height: 25px;
+
+            .product-title{
+                font-size: 14px;
+                color: #999999;
+                text-transform: uppercase;
+                font-weight: 600;
+                &:hover{
+                    color: #2879fe;
+                    cursor: pointer;
+                }
+            }
+
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+
+                li{
+                    padding:0px 5px ;
+                }
+            }
+
+            .description{
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 0.03px;
+                &:hover{
+                    color:  #2879fe;
+                }
+            }
+
+            .price{
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            .btn{
+                display: none;
+                @include button_style;
+            }
+        }
+
+        &:hover{
+            .product-details{
+                margin-top: -100px;
+                transition: 1s ease;
+                position: relative;
+                margin-bottom: 100px;
+                background-color: white;
+                cursor: pointer;
+            }
+            .btn{
+                display: block;
+            }
+        }
+    }    
+}        
+    
+        
+
+
+
+
+
+
+        

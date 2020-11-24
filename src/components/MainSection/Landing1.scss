@@ -1,0 +1,59 @@
+.landing-page{
+    position: relative;
+    height: 90vh;
+    margin-top: 10px;
+    background-image: url('../../img/woman.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 3.5em;
+
+    h1{
+        font-size: 32px;
+        font-weight: 600;
+        color:#2879ef;
+        text-transform: uppercase;
+        padding: 30px 0px;  
+        text-align: center;
+    }
+
+    .landing-offer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+        flex-direction: column;
+        line-height: 2.1em;
+
+        h2{
+            font-size: 70px;
+            color: white;   
+        } 
+    }
+
+    .btn{
+        margin-top: 50px;
+        margin-left: 40px;
+        background-color: #2879fe;
+        padding: 15px 35px;
+        color: lightcyan;
+        text-align: center;
+        border: none;
+        font-size: 12px;
+        text-transform: uppercase;
+        line-height: 1.0;
+        letter-spacing: 0.03em;
+        cursor: pointer;
+        border-radius:5px;    
+
+        &:hover{
+            background-color: rgb(34, 103,216)    
+        }
+    }
+
+    
+}
